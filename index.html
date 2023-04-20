@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
+  <title>ลิงค์แชร์กิจกรรม</title>
+</head>
+<body>
+    <script src="https://static.line-scdn.net/liff/edge/versions/2.5.0/sdk.js"></script>
+    <script>
+        async function main() {
+                                         // Liff ID
+            await liff.init({ liffId: "1660932636-a2KGWq9P" })
+            await liff.shareTargetPicker([
+                {
+                    type: "flex",
+                    // ข้อความก่อนกดอ่าน
+                    altText: "แจกโค้ดฟรี 50฿ ตอนนี้",
+                    contents: 
+                    // โค้ดจาก line bot designer
+                    {
+  "type": "bubble",
+  "hero": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://media.discordapp.net/attachments/1098388467345526784/1098388556168319046/50-01.jpeg?width=1068&height=1068",
+            "size": "full"
+          }
+        ],
+        "borderColor": "#ffffff",
+        "borderWidth": "medium",
+        "cornerRadius": "xl"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "💎 รับทุนฟรี 50฿ 💎",
+            "align": "center",
+            "weight": "bold",
+            "color": "#ffffff"
+          },
+          {
+            "type": "text",
+            "text": "รับทันที ไม่ต้องฝากก่อน",
+            "align": "center",
+            "color": "#ffffff"
+          },
+          {
+            "type": "text",
+            "text": "❗️รับได้ไม่จำกัด❗️",
+            "align": "center",
+            "color": "#ffffff"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "button",
+                    "action": {
+                      "type": "uri",
+                      "label": "รับทุนฟรี",
+                      "uri": "https://lin.ee/YSPdc8m"
+                    },
+                    "color": "#191970"
+                  }
+                ],
+                "background": {
+                  "type": "linearGradient",
+                  "angle": "0deg",
+                  "startColor": "#FFD700",
+                  "endColor": "#FFD700",
+                  "centerColor": "#FFFF00"
+                },
+                "cornerRadius": "xl"
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "button",
+                    "action": {
+                      "type": "uri",
+                      "label": "ทางเข้าเล่น",
+                      "uri": "https://www.superjoker99.com/"
+                    },
+                    "color": "#191970"
+                  }
+                ],
+                "background": {
+                  "type": "linearGradient",
+                  "angle": "0deg",
+                  "startColor": "#FFD700",
+                  "endColor": "#FFD700",
+                  "centerColor": "#FFFF00"
+                },
+                "cornerRadius": "xl"
+              }
+            ],
+            "borderWidth": "medium",
+            "spacing": "md",
+            "margin": "sm"
+          }
+        ],
+        "margin": "md"
+      }
+    ],
+    "backgroundColor": "#990066",
+    "paddingAll": "lg"
+  }
+}
+                }
+            ])
+            liff.closeWindow()
+        }
+        main()
+    </script>
+</body>
+</html>
